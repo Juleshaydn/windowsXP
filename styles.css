@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+/* Defines the default properties of the body */
+body {
+    font-family: 'Segoe UI', Tahoma;
+    background: url(/public/images/bliss.png) no-repeat center fixed;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#windows_bar {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(0deg, rgb(54, 93, 212) 0%, rgba(52,92,212,1) 82%, rgba(93,148,237,1) 94%);
+}
+
+/* Adds styling to the clock */
+#clock {
+    font-family: Courier;
+    font-size: small;
+    background: linear-gradient(180deg, rgba(81,173,234,1) 7%, rgba(65,142,236,1) 16%);
+    width: 20%;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    -webkit-font-smoothing: none;
+    text-align: center;
+    line-height: 40px;
+}
+
+#start_button {
+    display: flex;
+    width: 7%;
+    justify-content: space-around;
+    border: solid rgb(153,200,153,1);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: linear-gradient(172deg, rgba(153,200,153,1) 10%, rgba(96,163,83,1) 17%, rgba(62,121,47,1) 76%);
+}
+
+.programs {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: grid;
+    grid-template-rows: 120px 120px;
+}
+
+#program {
+    padding: 0px;
+    margin: 0px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+#program img, p {
+    width: 100%;
+    height: 100%;
+}
+
+#tab_menu {
+    position: absolute;
+    border: 4px solid rgba(52,92,212,1);
+    top: 40px;
+    left: -4px;
+    overflow: scroll;
+    background-color:#EBE9DA;
+    width: 100%;
+    height: 70%;
+}
+
+#tab_menu ul {
+    list-style: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    height: 100px;
+    width: auto;
+}
+
+#tab_menu nav a {
+    font-family: VT323;
+}
+
+#time {
+    color: #EBE9DA;
+}
+
+#tab_menu a {
+    text-align: center;
+    padding-left: 15px;
+    float: left;
+    color: #000000;
+    font-family: Tahoma;
+    -webkit-font-smoothing: none;
+}
+
+#tab_menu a:hover {
+    height: 50px;
+    color: #202020;
+    background-color:#c7baba;
+    transition: background-color 0.15s ease-in-out;
+}
+
+#mainHeader {
+    padding-top: 80px;
+}
+
+#start_text {
+    margin: 0;
+    margin-top: 7px;
+    text-align: center;
+    width: auto;
+    width: 70%;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#start_menu_top_bar {
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+
+#start_menu_top_bar img {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+#start_menu_text {
+    width: auto;
+    width: 70%;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #000000;
+    padding-left: 15px;
+}
+
+#start_logo {
+    background-image: url(images/start_logo.png);
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    margin-top: 5px;
+    margin-left: 12px;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+#start-menu {
+    position: fixed;
+    bottom: 40px;
+    visibility: hidden;
+    background: linear-gradient(0deg, hsl(225, 65%, 52%) 0%, rgba(52,92,212,1) 82%, rgba(93,148,237,1) 94%);
+    width: 380px;
+    height: 550px;
+    left:0%;
+    z-index: 0;
+    border-radius:5px 5px 0px 0px;
+    box-shadow:
+      2px 6px 10px #333,
+      -2px 0px 5px rgba(20, 20, 20, 0.6) inset,
+      2px 0px 3px #7fbce8 inset;
+
+    overflow:hidden;
+    letter-spacing:-0.2px;
+    padding: 10px 5px 10px 5px;
+}
+
+#main_menu {
+    color: #2e333d;
+    height: 100%;
+    width: 100%;
+    background-color: #dce1e9;
+    border: solid 1px #95aac1;
+}
+
+#page_title {
+    color: #000000;
+    font-size: medium;
+}
+
+#title_div1, #title_div2, #title_div3, #title_div4, #title_div5, #title_div6, #title_div7, #title_div8 {
+    padding-top: 15px;
+    padding-left: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#mainNav li {
+    color: #2e333d;
+    list-style: none;
+    height: 50px;
+    margin-left: -30px;
+    text-align: left;
+}
+
+#mainNav li:hover {
+    background-color: #b7cce3;
+    color: black;
+}
+
+#mainNav a:link { text-decoration: none; }
+
+
+#mainNav a:visited { text-decoration: none; }
+
+
+#mainNav a:hover { text-decoration: none; }
+
+
+#mainNav a:active { text-decoration: none; }
+
+.window_bar {
+    position: fixed;
+    padding: 0px;
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(0deg, rgba(52,92,212,1) 0%, rgba(52,92,212,1) 82%, rgba(93,148,237,1) 94%)
+}
+
+.window_bar #close_button {
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 24px;
+    font-family: Tahoma;
+    background: rgb(210,82,42);
+    background: radial-gradient(circle, rgba(210,82,42,1) 60%, rgba(255,152,119,1) 100%);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.window_bar a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#content{
+    padding: 20px;
+}
+.window {
+    border: 4px solid rgba(52,92,212,1);
+    border-top: none;
+    border-radius: 7px;
+    position: absolute;
+    overflow: scroll;
+    background-color: rgb(255, 255, 255);
+    top: 10%;
+    right: 20%;
+    width: 50%;
+    height: 70%;
+}
+
+#loader {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#loading_border {
+    display: flex;
+    position: relative;
+    height: 12px;
+    width: 250px;
+    border: solid 2px #7f7d80;
+    border-radius: 5px;
+    z-index: 2;
+    background-color: #00000000;
+}
+
+.box {
+    width: 10px;
+    height: 10px;
+    background: rgb(133,159,249);
+    background: linear-gradient(180deg, rgba(133,159,249,1) 27%, rgba(43,56,194,1) 93%);
+    border: solid 1px black;
+    z-index: 1;
+    border-radius: 2px;
+    animation: loadingBoxes 2s ease-in-out 5;
+  }
+
+  #profile_picture {
+    width: 150px;
+    height: auto;
+    border: solid 2px rgb(211, 211, 211);
+    border-radius: 5px;
+}
+
+  footer {
+    color: white;
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    bottom: 50px;
+    margin: 5px;
+    z-index: -1;
+  }
+  
+  @keyframes loadingBoxes {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(213px);
+    }
+  }
+
+  /* Overrides sizing of elements for mobile users */
+
+@media screen and (max-width: 600px) {
+
+    #start_logo {
+        background-image: url(images/burger_menu.svg);
+        background-repeat: no-repeat;
+        background-size: 30px 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+    body {
+        font-size: small;
+    }
+    .window {
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .window_bar {
+        width: 100%;
+    }
+
+    .start_button img {
+        width: 2000px;
+        height: 100%;
+    }
+
+    #start_text {
+        display: none;
+    }
+
+    #start_button {
+        background: #7fbce800;
+        padding: 0px 10px 0px 0px;
+        border: none;
+        width: 10%;
+    }
+
+    #clock{
+        width: 50%;
+    }
+
+    #start-menu {
+        position: fixed;
+        bottom: 15px;
+        visibility: hidden;
+        background: linear-gradient(0deg, rgba(52,92,212,1) 0%, rgba(52,92,212,1) 82%, rgba(93,148,237,1) 94%);
+        width: 98%;
+        height: 100%;
+        left:0%;
+        z-index: 0;
+        border-radius:5px 5px 0px 0px;
+        box-shadow:
+          2px 6px 10px #333,
+          -2px 0px 5px rgba(20, 20, 20, 0.6) inset,
+          2px 0px 3px #7fbce8 inset;
+    
+        overflow:hidden;
+        letter-spacing:-0.2px;
+        top: 0px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+  /* Overrides sizing of elements for tablet users */
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+
+    #start_logo {
+        display: none;
+    }
+
+    #start_text {
+        font-size: small;
+    }
+
+    #clock{
+        width: 30%;
+    }
+
+    .window {
+        top: 5%;
+        left:10%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .window_bar {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+}

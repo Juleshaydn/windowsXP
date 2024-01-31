@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Jules Skinners portfolio website">
+    <title>Demos</title>
+</head>
+<body style="background: url(images/bliss.webp) no-repeat center fixed; background-size: cover;">
+    <div id="container">
+        <div class="programs">
+
+            <!-- The source of this image is: https://logos.fandom.com/wiki/Internet_Explorer -->
+                <div id="program">
+                <a href="browser.html">
+                    <picture>
+                        <source srcset="images/explorer.webp" type="image/webp">
+                        <source srcset="images/explorer.png" type="image/png">
+                        <img  id="explorer" alt="explorer icon" src="images/explorer.webp">
+                    </picture>
+                </a>
+                </div>
+
+                            <!-- The source for this image is: https://www.staffnet.manchester.ac.uk/news/display/?id=9562 -->
+
+                <div id="program">
+                <a href="paint.html">
+                    <picture>
+                        <source srcset="images/paint.png" type="image/png">
+                        <source srcset="images/paint.webp" type="image/webp">
+                        <img  id="paint" alt="paint icon" src="images/explorer.png">
+                    </picture>
+                </a>
+                </div>
+
+                <div id="program">
+                <a href="https://www.linkedin.com/in/julesskinner/">
+                    <picture>
+                        <source srcset="images/linkedin.png" type="image/png">
+                        <source srcset="images/linkedin.webp" type="image/webp">
+                        <img  id="linkedin" alt="linkedin icon" src="images/linkedin.png">
+                    </picture>
+                </a>
+        </div>
+        </div>
+        <div class="window">
+            <div class="window_bar">
+                <div id="close_button">
+                    <a href="index.html">X</a>
+                </div>
+                <div id="tab_menu">
+                    <nav id="skillsNav">
+                        <ul>
+                            <li><a href="demos.html">Home</a></li>
+                            <li><a href="demos/css_animation.html" id="News">Animation Demo</a></li>
+                            <li><a href="demos/css_alt_styles.html" id="News">Tutorial Demo</a></li>
+                         </ul>             
+                    </nav>
+                </div>
+            </div>
+            <div id="content">
+                <header id="mainHeader">
+                    <h1>CSS and Styling Demo</h1>
+                    <h3>This page is an overview for CSS and Javascrip demos</h3>
+                    <img id="demo" src="images/demo_image.png" alt="Demo Image" style="width:200px; height:auto; display: block; margin-left: auto; margin-right: auto;">
+                </header>
+                <nav id="skillsNav">
+                    <ul>
+                        <li><a href="demos/css_animation.html" id="News">Animation Demo</a></li>
+                        <li><a href="demos/css_alt_styles.html" id="News">Tutorial Demos</a></li>
+                    </ul>             
+                </nav>
+            </div>
+        </div>
+        <main>
+                       <div id="start-menu">
+                <div id="start_menu_top_bar">
+                    <img src="images/profile_picture.jpeg" alt="profile picture" id="profile_picture">
+                    <h1 id="start_menu_text">Jules</h1>
+                </div>
+
+                <div id="main_menu">
+                <nav id="mainNav">
+                        <ul>
+                            <li><a href="about_me.html" id="page_title"><div id="title_div1">About</div></a></li>
+                            <li><a href="skills.html" id="page_title"><div id="title_div2">Skills</div></a></li>
+                            <li><a href="experience.html" id="page_title"><div id="title_div3">Qualifications</div></a></li>
+                            <li><a href="personal_projects.html" id="page_title"><div id="title_div4">Personal Projects</div></a></li>
+                            <li><a href="demos.html" id="page_title"><div id="title_div5">Demos</div></a></li>
+                            <li><a href="contact.html" id="page_title"><div id="title_div6">Contact</div></a></li>
+                            <li><a href="paint.html" id="page_title"><div id="title_div7">Paint</div></a></li>
+                            <li><a href="browser.html" id="page_title"><div id="title_div8">Browser</div></a></li>
+                         </ul>     
+                </nav>
+            </div>
+            </div>
+            <div id="windows_bar">
+                <div id="start_button" onclick="showMenu()">
+<div id="start_logo"></div>
+                    <h1 id="start_text">Start</h1>
+                </div>
+                <div id="clock">
+                    <span id="time">11:00:00</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    
+    <footer>
+        <p>Jules Skinners</p>
+        <p>Student ID: S36221M</p>
+        <p>Portfolio Website Assignment at Staffordshire University Web Dev and OS</p>
+    </footer>
+</body>
+
+</html>
